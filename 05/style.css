@@ -1,0 +1,7 @@
+body{
+    background-image: url(addons/hat-wizard-solid.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height: 97vh;
+    background-position: center center;
+}
