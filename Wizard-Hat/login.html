@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Wizard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Venha fazer parte da <br />Wizard!!</h1>
+        <img src="addons/wizard (1).png" alt="" class="left-login-image" />
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input
+              type="text"
+              name="usuario"
+              placeholder="Usuário"
+              id="usuario"
+            />
+          </div>
+          <div class="textfield">
+            <label for="Senha">Senha</label>
+            <input
+              type="password"
+              name="senha"
+              placeholder="Senha"
+              id="senha"
+            />
+          </div>
+          <button class="btn-login" onclick="logar()">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function logar(){
+
+        var login = document.getElementById("usuario").value;
+        var senha = document.getElementById("senha").value;
+
+        if(login == "jjoaquimsx", "rafaeldesigner" && senha == "jjoaquimsx", "rafaeldesigner" ){
+          location.href = "home.html"
+        }else{
+          alert('Usuario ou senha incorretos');
+        }
+
+
+      }
+    </script>
+  </body>
+</html>
