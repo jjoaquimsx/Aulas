@@ -1,7 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: url(addons/hat-wizard-solid.svg);
     background-size: 50px;
     background-repeat: no-repeat;
     height: 97vh;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-card{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
 }
