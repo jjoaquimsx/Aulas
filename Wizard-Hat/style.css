@@ -103,3 +103,25 @@ body{
 .left-login-image{
     width: 15vw;
 }
+
+@media screen and (max-width: 480px){
+    .left-login{
+        text-align: center;
+        font-size: smaller;
+    }
+    
+    .left-login-image{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .left-login, .right-login{
+        text-align: center;
+        font-size: smaller;
+    }
+
+    .left-login{
+        margin-left: 10px;
+    }
+}
