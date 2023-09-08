@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+
+#container{
+    height: 97vh;
+    padding: 10px;
+
+    background: url(/07/imgs/target001.png) #19142e;
+    background-size: 100% 100%;
+}
+
+#conteudo{
+    position: absolute;
+    left: 8px;
+    height: 200px;
+    width: 400px;
+
+    left: 50%;
+    top: 50%;
+
+    background-color: aqua;
+    background-image: url(imgs/target001.png);
+    background-size: 100% 100%;
+
+    transform: translate(-50%, -50%);
+
+}
