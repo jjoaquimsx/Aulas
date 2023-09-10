@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&family=Tulpen+One&display=swap');
+
+body{
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+header{
+    color: aliceblue;
+    background-color: black;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    margin: 0;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+header > p, a{
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+p{
+    font-size: 40px;
+}
+
+ul > li{
+    list-style: none;
+    margin: 60px 0px 60px 0px;
+    line-height: 90px;
+}
+
+footer > p{
+    background: rgb(18, 15, 43) ;
+    margin: 0;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
