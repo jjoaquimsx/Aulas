@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto:wght@300&family=Tulpen+One&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     font-weight: bold;
-    font-family: 'Roboto';
+    font-family: 'Quicksand';
 }
 
 header{
     color: aliceblue;
     background-color: black;
-    height: 150px;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,21 +22,67 @@ header{
 
 header > h1{
     margin: 0;
-    font-size: 60px;
-    margin-bottom: 10px;
+    font-size: 5.5vw;
+    margin-bottom: 1rem;
 }
 
 header > p > a {
-    font-size: 20px;
+    font-size: 1.5vw;
     color: aliceblue;
     text-decoration: none;
 }
 
-section > p{
-    font-size: 40px;
-    padding-left: 50px;
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: "Quicksand";
+    font-size: 3.5vw;
 }
 
-.img1{
-    background: url(imgs/lugares-no-nordeste.png);
+.normal > p {
+    margin-bottom: 2em;
+}
+
+section#img1{
+    background: url(imgs/imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+}
+
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.589);
+    border-radius: 20px 20px 20px 20px;
+    width: 13em;
+    padding: 10px;
+    background-position: right center;
+    backdrop-filter: blur(10px);
+}
+
+section#img2{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background: url(imgs/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+}
+
+footer{
+    background-color: slategray;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Tulpen One";
+    letter-spacing: 1px;
+    border-radius: 10px 10px 0 0;
+    border-top: 2px solid #7050ffda;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
