@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    width: 500px;
+    border-collapse: collapse;
+    box-shadow: inset 0px 0px 10px black;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+thead, tfoot{
+    background-color: gray;
+    color: #fff;
+}
+
+.num{
+    text-align: end;
+}
+
+caption{
+    background-color: lightgray;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd){
+    background: linear-gradient(to left,#b4365c, #69102d);
+    color: #fff;
+}
