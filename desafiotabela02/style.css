@@ -1,0 +1,25 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1em ;
+    width: 5vw;
+}
+
+th{
+    background-color: rgb(139, 139, 139);
+    color: #fff;
+}
+.materia{
+    color: black;
+    background-color: rgb(255, 255, 255) ;
+}
+td{
+    background-color: rgba(255, 255, 255, 0.774);
+}
