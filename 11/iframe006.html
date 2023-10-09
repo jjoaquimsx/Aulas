@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        h1{
+            font-size: 2em;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+        }
+        p{
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+        }
+
+        iframe{
+            border-radius: 20px;
+        }
+        .frame{
+            border-radius: 20px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conteudos dentro do Iframe</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo hic magnam magni? Veritatis blanditiis ea aliquam, earum eveniet, numquam dolorem delectus dolore similique ad harum nulla incidunt temporibus assumenda facilis.</p>
+    
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/862212885?h=0349b29285&autoplay=1&loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" fullscreen; picture-in-picture" allowfullscreen class=""></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+    <h1>Mapas do Google</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro iste voluptatibus, amet doloremque ad quaerat repellendus obcaecati nobis inventore quos eum quidem, veritatis reiciendis delectus maiores cum atque. Deserunt, dolor?</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31810.91304129415!2d-40.583256506936394!3d-4.706650695904281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x795cc2ff5ae9709%3A0x42e8c7f821e38644!2sNova%20Russas%2C%20CE%2C%2062200-000!5e0!3m2!1spt-BR!2sbr!4v1696456003956!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+
+    <h1>Mapa ao vivo do Waze</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia soluta eveniet alias ab quae distinctio iste vel cupiditate blanditiis labore ex, ad eos veritatis saepe facilis voluptatibus facere enim ducimus!</p>
+
+    <iframe src="https://embed.waze.com/iframe?zoom=15&lat=-4.709026&lon=-40.562446&ct=livemap" width="600" height="450" allowfullscreen class="frame"></iframe>
+
+</body>
+</html>
