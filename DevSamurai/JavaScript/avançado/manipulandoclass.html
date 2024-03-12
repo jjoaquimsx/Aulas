@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight{
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Titulo da pagina</h1>
+    <button id="changeclass">Alterar Classe</button>
+    <script>
+        const titleEl = document.querySelector(`#title`)
+
+        const buttonEl = document.querySelector(`#changeclass`)
+        buttonEl.addEventListener(`click`, () => {
+            titleEl.classList.toggle('highlight')
+            //if (titleEl.classList.contains(`highlight`)){
+            //   titleEl.classList.remove(`highlight`)
+            //} else{
+            //    titleEl.classList.add(`highlight`)
+            //}
+        })
+
+
+    </script>
+</body>
+</html>

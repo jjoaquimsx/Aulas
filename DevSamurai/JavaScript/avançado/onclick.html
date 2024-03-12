@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 97vh;
+        }
+
+        button {
+            color: #fff;
+            border-radius: 10px;
+            background-color: chocolate;
+            border-color: rgb(23, 128, 155);
+            padding: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            font-family: Poppins;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="trocarCor()" id="botao">Clique me</button>
+    <script defer>
+
+        var corButton = document.getElementById(`botao`)
+
+        function trocarCor() {
+            document.body.style.backgroundColor = `#${randomize(0, 999999)}`
+            document.body.style.transition = `0.7s linear`
+
+            corButton.style.color = `#${randomize(0, 999999)}`
+
+            corButton.style.backgroundColor = `#${randomize(0, 999999)}`
+
+            corButton.style.borderColor = `#${randomize(0, 999999)}`
+            corButton.style.transition = `1s linear`
+
+        }
+        
+        function randomize(a, b){
+                return Math.floor(Math.random() * (b - a + 1))   
+                
+        }
+
+        () => {
+            
+        } // ARROW FUNCTION
+
+
+        
+    </script>
+</body>
+
+</html>

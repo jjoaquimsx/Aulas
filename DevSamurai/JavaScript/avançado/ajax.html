@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Chamar dados</button>
+    <script>
+        const carregarDados = () => {
+            document.body.style.background = 'linear-gradient(10deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%)'
+            document.body.style.height = '97.5vh'
+            document.body.style.color = '#fff'
+            document.body.style.textAlign = 'center'
+            document.body.style.fontFamily = 'Poppins'
+
+
+            const xtl = new XMLHttpRequest()
+            xtl.open('GET', 'https://api.github.com/users/jjoaquimsx')
+            xtl.send(null)
+            xtl.onreadystatechange = () => {
+                if (xtl.readyState === 4) {
+                    const res = JSON.parse(xtl.responseText)
+                    const name = res.login
+                    const avatarUrl = res.avatar_url
+                    const followers = res.followers
+                    const blogUrl = res.blog
+
+                    const avatarEl = document.createElement('img')
+                    avatarEl.setAttribute("width", "128")
+                    avatarEl.setAttribute("src", avatarUrl)
+
+                    const nameEl = document.createElement('h1')
+                    nameEl.innerHTML = name
+
+                    const followersEl = document.createElement('p')
+                    followersEl.innerHTML = (`Followers: ${followers}`)
+
+                    const blogEl = document.createElement('h1')
+                    blogEl.setAttribute(`href`, `https://${blogUrl}`)    
+                    blogEl.innerHTML = blogUrl
+                    blogEl.style.borderRadius = '10px'
+
+                    document.body.appendChild(nameEl)
+                    document.body.appendChild(avatarEl)
+                    document.body.appendChild(followersEl)
+                    document.body.appendChild(blogEl)
+                    console.log(res)
+                }
+            }
+        }
+
+        const buttonEl = document.querySelector("button")
+        buttonEl.addEventListener('click', carregarDados)
+    </script>
+</body>
+
+</html>
