@@ -13,8 +13,8 @@ export const Sidebar = styled.aside`
   background: #191919;
   min-width: 10rem;
   width: 22rem;
-  max-height: 100vh;
-  overflow-y: hidden;
+  max-height: 100%;
+
 
   @media screen and (max-width: 768px){
     width: 100vw;

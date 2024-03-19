@@ -62,3 +62,13 @@ export const Data = styled.p`
     margin-right: 10px;
   }
 `;
+
+export const Insta = styled.a`
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+  transition: all 0.6s linear;
+  &:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+  }
+`;

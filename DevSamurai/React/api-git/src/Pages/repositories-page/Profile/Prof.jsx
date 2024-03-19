@@ -1,24 +1,41 @@
 import React from 'react'
-import { Container, Header, Login, Name, Avatar, Inner, Data } from './profstyle'
+import PropTypes from "prop-types"
+import { Container, Header, Login, Name, Avatar, Inner, Data, Insta } from './profstyle'
 
 import { MdGroup, MdLocationCity, MdWork, MdLink } from 'react-icons/md'
 
 
-export default function Prof() {
+export default function Prof({ User }) {
   return <Container>
     <Header>
-      <Avatar src='https://avatars.githubusercontent.com/u/134417953?v=4' />
-      <Login>Jjoaquim.sx</Login>
-      <Name>joaquim</Name>
+      <Avatar src={User.avatar_url} />
+      <Login>{User.login}</Login>
+      <Name>{User.name}</Name>
     </Header>
     <Inner>
-      <Data> <MdGroup size={18} /> 10 Seguidores, 10 seguindo</Data>
-      <Data> <MdLocationCity size={18}/>  Nova Russas/CE</Data>
-      <Data> <MdWork size={18}/> No Company</Data>
-      <Data>
-        <MdLink size={18}/>
-        <a href="https://www.instagram.com/jjoaquiim.sx/">Instagram</a>
+      <Data> <MdGroup size={18} /> {User.following} seguindo, {User.followers} seguidores</Data>
+      <Data> <MdLocationCity size={18} />{User.location}</Data>
+
+      <Data> <MdWork size={18} />{User.company}</Data>
+
+      <Data >
+        <MdLink size={18} />
+        <Insta href='' >Instagram</Insta>
+
       </Data>
     </Inner>
   </Container>
+};
+
+Prof.propTypes = {
+  User: PropTypes.shape({
+    login: PropTypes.string.isRequired,
+    avatar_url: PropTypes.string.isRequired,
+    followers: PropTypes.number.isRequired,
+    following: PropTypes.number.isRequired,
+    company: PropTypes.string,
+    name: PropTypes.string,
+    location: PropTypes.string,
+  }).isRequired,
 }
+
