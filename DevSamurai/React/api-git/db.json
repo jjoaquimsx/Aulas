@@ -1,0 +1,38 @@
+{
+  "users":[
+    {
+      "login": "jjoaquimsx",
+      "id": 134417953,
+      "node_id": "U_kgDOCAMOIQ",
+      "avatar_url": "https://avatars.githubusercontent.com/u/134417953?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jjoaquimsx",
+      "html_url": "https://github.com/jjoaquimsx",
+      "followers_url": "https://api.github.com/users/jjoaquimsx/followers",
+      "following_url": "https://api.github.com/users/jjoaquimsx/following{/other_user}",
+      "gists_url": "https://api.github.com/users/jjoaquimsx/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/jjoaquimsx/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/jjoaquimsx/subscriptions",
+      "organizations_url": "https://api.github.com/users/jjoaquimsx/orgs",
+      "repos_url": "https://api.github.com/users/jjoaquimsx/repos",
+      "events_url": "https://api.github.com/users/jjoaquimsx/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/jjoaquimsx/received_events",
+      "type": "User",
+      "site_admin": false,
+      "name": "jjoaquiimsx",
+      "company": "No-Company",
+      "blog": "",
+      "location": "Nova Russas/CE",
+      "email": null,
+      "hireable": null,
+      "bio": null,
+      "twitter_username": null,
+      "public_repos": 15,
+      "public_gists": 0,
+      "followers": 0,
+      "following": 0,
+      "created_at": "2023-05-23T15:45:56Z",
+      "updated_at": "2024-03-08T12:28:43Z"
+    }
+  ]
+}

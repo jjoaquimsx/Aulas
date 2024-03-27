@@ -17,7 +17,7 @@ export default function Prof({ User }) {
       <Data> <MdLocationCity size={18} />{User.location}</Data>
 
       <Data> <MdWork size={18} />{User.company}</Data>
-
+ 
       <Data >
         <MdLink size={18} />
         <Insta href='' >Instagram</Insta>
